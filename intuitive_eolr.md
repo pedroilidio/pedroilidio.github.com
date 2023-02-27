@@ -7,6 +7,7 @@
     h1,h2,h3,h4,h5,h6 {
         font-family: "Oswald";
         font-weight: bold;
+        text-align: left;
     }
     body {
         /*font-family: "Open Sans";*/
@@ -15,11 +16,11 @@
         padding: 10%;
     }
     img {
-        margin: auto;
+        width: 100%;
     }
     blockquote {
         background: #ffff0099;
-        padding: 2em;
+        padding: 5%;
         margin: 1em 0;
         border: 2px solid black;
     }
@@ -27,7 +28,7 @@
         margin: 0;
     }
     .box {
-        padding: 2em;
+        padding: 5%;
         margin: 1em 0;
         border: 2px solid black;
     }
@@ -108,7 +109,7 @@ lights on and 1 off to toggle, after which you end up with 4 lights off
 that you can just turn on in one last step (Figure 1).
 
 <div class=figbox>
-![](images/light_bulbs.svg){width=600}
+![](images/light_bulbs.svg){style="max-width: 600"}
 
 **Figure 1:** Simple light bulb analogy to LSE.
 </div>
@@ -120,12 +121,12 @@ oriented or misoriented.
 >**Definition:** We say an edge is **oriented** if its U or D sticker (here represented as white or yellow, as many cubers choose it to be) faces up or down when the U or the D center is placed up or down (Figure 2).
 
 <div class=figbox>
-![](images/eo1.svg){width=200}
-![](images/eo2.svg){width=200}
-![](images/eo3.svg){width=200}
-![](images/eo4.svg){width=200}
-![](images/eo5.svg){width=200}
-![](images/eo6.svg){width=200}
+![](images/eo1.svg){style="max-width: 200"}
+![](images/eo2.svg){style="max-width: 200"}
+![](images/eo3.svg){style="max-width: 200"}
+![](images/eo4.svg){style="max-width: 200"}
+![](images/eo5.svg){style="max-width: 200"}
+![](images/eo6.svg){style="max-width: 200"}
 
 **Figure 2:** Examples of LSE states with labels indicating the oriented (o) and misoriented (mo) edges.
 </div>
@@ -137,7 +138,7 @@ edges remaining and we can only toggle orientation of four edges at a
 time, there can only be 2, 4 or 6 misoriented edges in total.
 
 <div class=figbox>
-![](images/eo_toggle.svg){width=500}
+![](images/eo_toggle.svg){style="max-width: 500"}
 
 **Figure 3:** Illustration of edge orientation toggling. When a U or U' move is made with an F or B center
 on top, the four edges around it flip their orientatons, so that the
@@ -176,7 +177,7 @@ corresponding cycle, besides shifting their position as shown in Figure
 >**Definition:** We collectively call by **F-cycle** the edge positions UF, UR, DF and UL, and by **B-cycle** the edge positions UB, UL, DB and UR.
 
 <div class=figbox>
-![](images/f_cycle.svg){width=300}
+![](images/f_cycle.svg){style="max-width: 300"}
 
 **Figure 4:** F-cycle representation. If M\'UM is performed, \"turning the F-cycle
 clockwise\", the four highlighted edges will toggle orientation and be
@@ -239,7 +240,7 @@ imperative order 6mo ⟶ 2mo ⟶ 4mo ⟶ 0mo by
 enumerating the few possible state transitions (Figure 5).
 
 <div class=figbox>
-![](images/state_transition_graph.svg){width=500}
+![](images/state_transition_graph.svg){style="max-width=500px"}
 
 **Figure 5:** State transition graph of edge orientation states for LSE.
 "mo" stands for misoriented edge, and "o" means oriented edge. Arrow
@@ -321,11 +322,11 @@ cycle with only misoriented edges (an \"arrow\") is the mandatory last
 step for edge orientation, reaching one of these "good arrows" is mandatory to solve EOLR.
 
 <div class=figbox>
-![](images/good_arrow1l.svg){width=200}
-![](images/good_arrow1r.svg){width=200}
-![](images/good_arrow2l.svg){width=200}
-![](images/good_arrow2r.svg){width=200}
-![](images/good_arrow3.svg){width=200}
+![](images/good_arrow1l.svg){style="max-width: 200"}
+![](images/good_arrow1r.svg){style="max-width: 200"}
+![](images/good_arrow2l.svg){style="max-width: 200"}
+![](images/good_arrow2r.svg){style="max-width: 200"}
+![](images/good_arrow3.svg){style="max-width: 200"}
 
 **Figure 6** The 5 "good arrows" possible. The symmetric equivalents obtained by
 flipping B and F are not represented, but are just a y2 move apart from
@@ -415,9 +416,9 @@ conditions of:
 is therefore called a **good cycle** (see Figure 7).
 
 <div class=figbox>
-![](images/good_cycle1.svg){width=300}
-![](images/good_cycle2.svg){width=300}
-![](images/good_cycle3.svg){width=300}
+![](images/good_cycle1.svg){style="max-width: 300"}
+![](images/good_cycle2.svg){style="max-width: 300"}
+![](images/good_cycle3.svg){style="max-width: 300"}
 
 **Figure 7:** Three examples of good cycles are illustrated, with edge colors indicated
 besides labels and connectors indicating the MICA and its matching edge,
