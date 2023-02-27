@@ -458,8 +458,7 @@ Procedure 1, specializing it.
 
 After solving the good arrow, the MICA and its matching edge should arive at DF-DB.
 
-Several examples of application of this procedure are shown in Section
-X, with the intention of clarifying any confusion that may arise.
+Several examples of application of this procedure are shown in the Example solves appendix, with the intention of clarifying any confusion that may arise.
 
 ## 5. Final remarks and future work
 
@@ -484,7 +483,7 @@ the proposed procedure, further suggesting eventual extensions.
 Additionally, this work is written mainly from a \"U/D center on top\"
 (or "oriented centers") perspective, so considering what is commonly
 called \"misoriented centers\" poses a new territory to be explored
-under the proposed optics (see box X). With F/B on top, turning the F/B-cycles, which
+under the proposed optics. With F/B on top, turning the F/B-cycles, which
 now surround U and D centers, does not toggle their orientation, and the
 new goal of 4a seems to be generating 4 misoriented edges and getting
 them to the top in order to orient them with an U move. Employing moves
@@ -501,7 +500,7 @@ Finally, some arbitrariness is still present in the described steps to
 the 2mo-4mo transition. Namely, there are often multiple good cycles
 available to be formed, and the last move of the cycle rotation (M or
 M\') can be arbitrarily chosen in the cases where ICM and OCO are the
-diagonally opposite edges of step X.
+diagonally opposite edges of step 2.
 
 Future proposals could further restrict this freedom in order to go
 beyond 4b, worrying about \"good 4c\" cases even before 4a. Therefore, I
