@@ -31,6 +31,7 @@
         padding: 5%;
         margin: 1em 0;
         border: 2px solid black;
+        text-align: left;
     }
     .box > * {
         margin: 0;
@@ -271,8 +272,6 @@ following sections as the *in-cycle misoriented (ICM)* edge and the
 state will become the only oriented edges in the 4mo (arrow) state.
 
 >**Definition:** The only misoriented edge in the cycle selected in step 2.a of procedure 1 will be here called **in-cycle misoriented (ICM)**. The only oriented edge outside this cycle will be called **out-cycle oriented (OCO)**.
-
-(illustrate the important edges)
 
 Another thought I find useful in this process of looking ahead in step 2
 is that ICM and OCO need to end up one in the U face and the other in
