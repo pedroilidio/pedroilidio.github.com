@@ -50,14 +50,11 @@ A comprehensive guide by Pedro Ilídio.
 
 ## 1. Introduction
 
-
-Like many enthusiasts, I believe Roux has the potential to surpass
-CFOP as the main speedcubing method around, given its naturally lower
-move count. And for this potential to be fully explored and optimal
+With a naturally lower move count, Roux has been considered a prominent alternative to the mainstream CFOP method for speedsolving. But for this potential to be fully explored and optimal
 times to be achieved with Roux, one of the essentialities is to employ
 optimizations of the last six edges (LSE) step, such as EOLR, increasing the move efficiency as much as possible but avoiding an expressive recognition burden.
 
-Despite Roux being advertised as an intuitive solving method, the
+However, despite Roux being advertised as an intuitive solving method, the
 learning of EOLR still usually involves memorizing and recognizing a
 bunch of specific cases and sequences of moves, even if parts of these
 sequences are commonly regarded as intuitive.
