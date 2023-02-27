@@ -1,5 +1,49 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree Serif">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<style>
+    h1,h2,h3,h4,h5,h6 {
+        font-family: "Oswald";
+        font-weight: bold;
+    }
+    body {
+        /*font-family: "Open Sans";*/
+        font-family: "Bree Serif";
+        text-align: justify;
+        padding: 10%;
+    }
+    img {
+        margin: auto;
+    }
+    blockquote {
+        background: #ffff0099;
+        padding: 2em;
+        margin: 1em 0;
+        border: 2px solid black;
+    }
+    blockquote > * {
+        margin: 0;
+    }
+    .box {
+        padding: 2em;
+        margin: 1em 0;
+        border: 2px solid black;
+    }
+    .box > * {
+        margin: 0;
+    }
+    .figbox {
+        font-style: italic;
+        margin-right: 5%;
+        margin-left: 5%;
+        text-align: center;
+    }
+</style>
 <h1 id="intuitive-eolr-with-two-misoriented-edges">Intuitive EOLR with
 two misoriented edges</h1>
+<hr />
 <p>A comprehensive guide by Pedro Ilídio.</p>
 <h2 id="introduction">1. Introduction</h2>
 <p>Like many enthusiasts, I believe Roux has the potential to surpass
@@ -57,32 +101,40 @@ off and vice-versa. The solution one would probably come up with is
 pretty straightforward: just turn 4 of the lights on, then select 3
 lights on and 1 off to toggle, after which you end up with 4 lights off
 that you can just turn on in one last step (Figure 1).</p>
-<p><img src="/images/light_bulbs.svg" width="600" /></p>
+<div class="figbox">
+<p><img src="images/light_bulbs.svg" width="600" /></p>
 <p><strong>Figure 1:</strong> Simple light bulb analogy to LSE.</p>
+</div>
 <p>The LSE-4a step of the Roux method is not that different from that
 simple analogy. In this step, each of the six edges can be either
 oriented or misoriented.</p>
+<blockquote>
 <p><strong>Definition:</strong> We say an edge is
 <strong>oriented</strong> if its U or D sticker (here represented as
 white or yellow, as many cubers choose it to be) faces up or down when
 the U or the D center is placed up or down (Figure 2).</p>
-<p><img src="/images/eo1.svg" width="200" /> <img src="/images/eo2.svg"
-width="200" /> <img src="/images/eo3.svg" width="200" /> <img
-src="/images/eo4.svg" width="200" /> <img src="/images/eo5.svg"
-width="200" /> <img src="/images/eo6.svg" width="200" /></p>
+</blockquote>
+<div class="figbox">
+<p><img src="images/eo1.svg" width="200" /> <img src="images/eo2.svg"
+width="200" /> <img src="images/eo3.svg" width="200" /> <img
+src="images/eo4.svg" width="200" /> <img src="images/eo5.svg"
+width="200" /> <img src="images/eo6.svg" width="200" /></p>
 <p><strong>Figure 2:</strong> Examples of LSE states with labels
 indicating the oriented (o) and misoriented (mo) edges.</p>
+</div>
 <p><strong>Whenever a U turn is made around an F or B center (green or
 blue in the diagrams), the four edge pieces surrounding it switch
 orientation</strong>, so that oriented edges become misoriented and
 vice-versa (Figure 3). Since there are 6 edges remaining and we can only
 toggle orientation of four edges at a time, there can only be 2, 4 or 6
 misoriented edges in total.</p>
-<p><img src="/images/eo_toggle.svg" width="500" /></p>
+<div class="figbox">
+<p><img src="images/eo_toggle.svg" width="500" /></p>
 <p><strong>Figure 3:</strong> Illustration of edge orientation toggling.
 When a U or U’ move is made with an F or B center on top, the four edges
 around it flip their orientatons, so that the oriented edges become
-misoriented and the misoriented become oriented.)</p>
+misoriented and the misoriented become oriented.</p>
+</div>
 <p>So the way we solve the orientation of the LSE necessarily involves a
 last stage where 4 remaining misoriented edges are oriented by a U or U’
 move around a B or F center (similarly to the light bulbs analogy).</p>
@@ -106,13 +158,17 @@ executed (for the B-cycle). When the respective center (F or B) is on
 top, performing a U or U’ move will switch the orientation of the 4
 edges of the corresponding cycle, besides shifting their position as
 shown in Figure 4.</p>
+<blockquote>
 <p><strong>Definition:</strong> We collectively call by
 <strong>F-cycle</strong> the edge positions UF, UR, DF and UL, and by
 <strong>B-cycle</strong> the edge positions UB, UL, DB and UR.</p>
-<p><img src="/images/f_cycle.svg" width="200" /></p>
+</blockquote>
+<div class="figbox">
+<p><img src="images/f_cycle.svg" width="300" /></p>
 <p><strong>Figure 4:</strong> F-cycle representation. If M'UM is
 performed, "turning the F-cycle clockwise", the four highlighted edges
 will toggle orientation and be permuted as indicated by the arrows.</p>
+</div>
 <p>Therefore, the cycles correspond, in the simpler light bulb analogy,
 to the two possible sets of 4 lights that we can toggle together, and
 the last step of edge orientation also involves selecting 4 lamps off
@@ -122,10 +178,12 @@ misoriented.</p>
 <p>A difference here is that edges can be repositioned with arbitrary U
 moves around a white/yellow (U/D) center or U2 around  an F/B center,
 without changing their orientation.</p>
+<blockquote>
 <p><strong>Definition:</strong> I refer to performing M’ followed by U
 or U’ and then M or M’ as <strong>turning the F-cycle</strong>, and to
 making an M move followed by U or U’ and then by M or M’ as
 <strong>turning the B-cycle</strong>.</p>
+</blockquote>
 <p>These optional turning directions will later be restricted by
 EOLR.</p>
 <p>So the procedure to orient all LSE using only M and U moves
@@ -133,8 +191,11 @@ EOLR.</p>
 state, not considered here.) is strikingly similar to Figure 1. Starting
 from a state where all 6 edges are misoriented (what I will call the
 <strong>6mo state</strong>), follow Procedure 1.</p>
+<div class="box">
 <p><strong>Procedure 1: orienting all the last six edges from the 6mo
 state.</strong></p>
+<hr />
+<p><br></p>
 <ol type="1">
 <li><strong>Switch 4mo edges.</strong>
 <ol type="a">
@@ -158,6 +219,7 @@ kept.</li>
 them.</li>
 </ol></li>
 </ol>
+</div>
 <p>Notice how the cycle-setting followed by cycle-turning substeps
 closely resembles the light bulb selection followed by light toggling in
 the previous simple analogy.</p>
@@ -167,7 +229,8 @@ of the steps is definite</em>. One can demonstrate that the states in
 the shortest route to edge orientation (or all lights on) have the
 imperative order 6mo ⟶ 2mo ⟶ 4mo ⟶ 0mo by enumerating the few possible
 state transitions (Figure 5).</p>
-<p><img src="/images/state_transition_graph.svg" width="500" /></p>
+<div class="figbox">
+<p><img src="images/state_transition_graph.svg" width="500" /></p>
 <p><strong>Figure 5:</strong> State transition graph of edge orientation
 states for LSE. “mo” stands for misoriented edge, and “o” means oriented
 edge. Arrow labels indicate the composition of the selected group of
@@ -175,6 +238,7 @@ edges to flip. For example, 3o + 1mo means to select 3 oriented and 1
 misoriented edge and toggle their orientation. The shortest route to the
 goal 0mo state is highlighted in purple. These are the only relevant
 transitions, corresponding to the steps described in Procedure 1.</p>
+</div>
 <h3 id="arrow-case-lookahead-from-2mo">2.1. Arrow case lookahead from
 2mo</h3>
 <p>A relevant property to be noticed is that, after step 2.a, the two
@@ -193,10 +257,12 @@ following sections as the <em>in-cycle misoriented (ICM)</em> edge and
 the <em>out-cycle oriented (OCO)</em> edge. Remember that ICM and OCO in
 the 2mo state will become the only oriented edges in the 4mo (arrow)
 state.</p>
+<blockquote>
 <p><strong>Definition:</strong> The only misoriented edge in the cycle
 selected in step 2.a of procedure 1 will be here called <strong>in-cycle
 misoriented (ICM)</strong>. The only oriented edge outside this cycle
 will be called <strong>out-cycle oriented (OCO)</strong>.</p>
+</blockquote>
 <p>(illustrate the important edges)</p>
 <p>Another thought I find useful in this process of looking ahead in
 step 2 is that ICM and OCO need to end up one in the U face and the
@@ -236,9 +302,11 @@ the edge orientation step (Roux’s 4a), the UR-UL or UF-UB pairs of edges
 in the DF and DB positions, where they can easily be inserted to their
 correct spots in the U layer, essentially combining Roux’s 4a and 4b in
 a single step, i.e. doing 4b while solving 4a.</p>
+<blockquote>
 <p><strong>Definition:</strong> Let’s generically call the original
 UR-UL or UF-UB edge pairs by <strong>matching edge pairs</strong> from
 here on.</p>
+</blockquote>
 <p>Thus, the goal of EOLR can be stated as placing a matching edge pair
 in the DF-DB positions while solving LSE orientation.</p>
 <p><strong>Note:</strong> No distinction is made between UR-UL or UF-UB
@@ -251,11 +319,12 @@ while still solving orientation. And remember that, since 4mo with a
 cycle with only misoriented edges (an "arrow") is the mandatory last
 step for edge orientation, reaching one of these “good arrows” is
 mandatory to solve EOLR.</p>
-<p><img src="/images/good_arrow1l.svg" width="200" /> <img
-src="/images/good_arrow1r.svg" width="200" /> <img
-src="/images/good_arrow2l.svg" width="200" /> <img
-src="/images/good_arrow2r.svg" width="200" /> <img
-src="/images/good_arrow3.svg" width="200" /></p>
+<div class="figbox">
+<p><img src="images/good_arrow1l.svg" width="200" /> <img
+src="images/good_arrow1r.svg" width="200" /> <img
+src="images/good_arrow2l.svg" width="200" /> <img
+src="images/good_arrow2r.svg" width="200" /> <img
+src="images/good_arrow3.svg" width="200" /></p>
 <p><strong>Figure 6</strong> The 5 “good arrows” possible. The symmetric
 equivalents obtained by flipping B and F are not represented, but are
 just a y2 move apart from the examples. The original UR and UL
@@ -264,6 +333,7 @@ and 2L cases, the UL edge is at the DB position. Among the original UR
 and UL, which edge is UR and which is UL is not important in the figure,
 their positions could be swapped without compromising the diagram’s
 meaning.</p>
+</div>
 <p><strong>Good arrow 1L</strong> - <strong>Set up:</strong> U M2 U2 M
 U' M - <strong>Solution:</strong> M' U  M' (<a
 href="https://cubedb.net/?puzzle=3&amp;title=Good_arrow_1A&amp;scramble=U_M2_U2_M_U-_M&amp;alg=M-_U_M-">3D
@@ -303,10 +373,12 @@ a third edge that matches up with one of them, so that this third edge
 and the ICM or this third edge and the OCO are either the original UL-UR
 or the original UF-UB edges.</p>
 <p>At this point, the following statement can be made:</p>
+<blockquote>
 <p><strong>Conjecture:</strong> if there is a third edge pairing up with
 either ICM or OCO and if it is adjacent to the ICM in the cycle set up
 in the 2a step of Procedure 1, there necessarily is a rotation of this
 cycle that leads to a good arrow.</p>
+</blockquote>
 <p>Given its importance, I will call this third edge, being the match-up
 with ICM or OCO, misoriented, in-cycle and adjacent to the ICM, by
 <strong>MICA</strong>. By “adjacent” in this context, I mean that, if
@@ -314,30 +386,38 @@ the cycle is raised to the U face, this edge will not form a straight
 line with the ICM and the raised center, forming an “L-shaped”, 90º
 angle instead. This is equivalent to saying that the MICA and the ICM
 must be connected by one of the arrows illustrated in Figure 4.</p>
+<blockquote>
 <p><strong>Definition:</strong> We call <strong>adjacent</strong>
 positions in the F-cycle the position pairs UL-UF, UF-UR, UR-DF and
 DF-UL. The adjacent positions in the B-cycle are UR-UB, UB-UL, UL-DB and
 DB-UR.</p>
+</blockquote>
+<blockquote>
 <p><strong>Definition:</strong> In the 2mo state, an edge that matches
 either the ICM or the OCO, is misoriented, in-cycle, and adjacent to the
 ICM is called <strong>MICA</strong>.</p>
+</blockquote>
+<blockquote>
 <p><strong>Definition:</strong> An F/B cycle in the 2mo state that
-satisfies the already stated conditions of</p>
+satisfies the already stated conditions of:</p>
 <ol type="1">
 <li>Being composed of 3 oriented edges and only one misoriented edge
 (the ICM);</li>
 <li>Having a MICA.</li>
 </ol>
+</blockquote>
 <p>is therefore called a <strong>good cycle</strong> (see Figure 7).</p>
-<p><img src="/images/good_cycle1.svg" width="300" /> <img
-src="/images/good_cycle2.svg" width="300" /> <img
-src="/images/good_cycle3.svg" width="300" /></p>
+<div class="figbox">
+<p><img src="images/good_cycle1.svg" width="300" /> <img
+src="images/good_cycle2.svg" width="300" /> <img
+src="images/good_cycle3.svg" width="300" /></p>
 <p><strong>Figure 7:</strong> Three examples of good cycles are
 illustrated, with edge colors indicated besides labels and connectors
 indicating the MICA and its matching edge, both of which will end up in
 the DF and DB positions after EOLR is completed. The solutions to these
 and other examples are fully described in the Example solves
 appendix.</p>
+</div>
 <p><strong>Set up:</strong></p>
 <p>U M U M2 U2 M U2 M' U M' U (Example case 5, first above)</p>
 <p>M U' M U' M U M2 U M (Example case 4, second above)</p>
@@ -345,8 +425,11 @@ appendix.</p>
 <p>Finally, the rotation that turns this good cycle into a good arrow
 can be performed as described by Procedure 2, which substitutes step 2
 of Procedure 1, specializing it.</p>
+<div class="box">
 <p><strong>Procedure 2: converting the 2mo state to a good
 arrow.</strong></p>
+<hr />
+<p><br></p>
 <ol type="1">
 <li><strong>Set up a good cycle</strong>;</li>
 <li><strong>Raise the selected good cycle</strong> by performing M' if
@@ -359,6 +442,7 @@ separated by the cube's core);</li>
 in different vertical layers (one in the U layer, the other in the D
 layer).</li>
 </ol>
+</div>
 <p>After solving the good arrow, the MICA and its matching edge should
 arive at DF-DB.</p>
 <p>Several examples of application of this procedure are shown in
@@ -409,7 +493,10 @@ contributions that could open the doors to one-look LSE.</p>
 id="tldr---eolr-how-to-intuitively-get-a-good-arrow-from-2-misoriented-edges">TL;DR
 - (EOLR) How to intuitively get a good arrow from 2 misoriented
 edges</h2>
+<div class="box">
 <h3 id="definitions">Definitions</h3>
+<hr />
+<p><br></p>
 <ul>
 <li>Let the two sets of edge positions (UL, UF, UR, DF) and (UR, UB, UL,
 DB) be respectively called <strong>F-cycle</strong> and
@@ -421,7 +508,10 @@ positions in the F-cycle are UL-UF, UF-UR, UR-DF and DF-UL.</li>
 called <strong>matching pairs</strong>, i.e. If U is yellow, yellow-red
 matches yellow-orange and yellow-blue matches yellow-green.</li>
 </ul>
+<p><br></p>
 <h3 id="procedure">Procedure</h3>
+<hr />
+<p><br></p>
 <ol type="1">
 <li><strong>Setting up:</strong> keeping white or yellow on top, adjust
 the U face setting up an F- or B-cycle such that:
@@ -439,79 +529,111 @@ move if it was the F-cycle or an M move if it was the B-cycle.</li>
 <li><strong>M or M’</strong>: reposition the M slice to keep the ICM and
 OCO in different layers, one in U, the other in D.</li>
 </ol>
+</div>
 <p>Multiple valid cycles can sometimes be found in step 1, but also
 none, in some rare and specific situations, even if EOLR can still be
 solved. Thus, further ideas and improvements are appreciated.</p>
 <h2 id="a.-example-solves">A. Example solves</h2>
-<h3 id="case-1">Case 1</h3>
-<p><strong>Set up:</strong> M' U M U2 M2 U M' U' M' U M U2 M'</p>
+<h3 id="case-1-3d-view">Case 1 (<a
+href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_1&amp;scramble=M-_U_M_U2_M2_U_M-_U-_M-_U_M_U2_M-&amp;alg=%2F%2F_Good_B%252Dcycle_selected%3A_ICM%3DUL_MICA%3DUB%2C_OCO%3DUF%3B_Matching_pair_is_MICA%252DOCO%0AM_%2F%2F_Raise_the_B%252Dcycle%0AU_%2F%2F_Place_ICM_diagonally_opposite_to_OCO%0AM-__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU2__%2F%2F_Place_OCO_on_top_of_ICM%0AM-_U-_M-__%2F%2F_Solve_the_good_arrow">3D
+view</a>)</h3>
+<ul>
+<li><strong>Set up:</strong> M' U M U2 M2 U M' U' M' U M U2 M'</li>
+</ul>
 <p>Good B-cycle selected: ICM=UL MICA=UB, OCO=UF; Matching pair is
 MICA-OCO</p>
-<p><strong>M</strong> // Raise the B-cycle</p>
-<p><strong>U</strong> // Place ICM diagonally opposite to OCO</p>
-<p><strong>M'</strong>  // Keep ICM and OCO in different layers</p>
-<p><strong>U2</strong>  // Place OCO on top of ICM</p>
-<p><strong>M' U' M'</strong>  // Solve the good arrow</p>
-<p><a
-href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_1&amp;scramble=M-_U_M_U2_M2_U_M-_U-_M-_U_M_U2_M-&amp;alg=%2F%2F_Good_B%252Dcycle_selected%3A_ICM%3DUL_MICA%3DUB%2C_OCO%3DUF%3B_Matching_pair_is_MICA%252DOCO%0AM_%2F%2F_Raise_the_B%252Dcycle%0AU_%2F%2F_Place_ICM_diagonally_opposite_to_OCO%0AM-__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU2__%2F%2F_Place_OCO_on_top_of_ICM%0AM-_U-_M-__%2F%2F_Solve_the_good_arrow">3D
-view</a> )</p>
-<h3 id="case-2">Case 2</h3>
-<p><strong>Set up:</strong> U M2 U2 M2 U2 M U M' U' M U M</p>
+<ul>
+<li><p><strong>M</strong> - Raise the B-cycle</p></li>
+<li><p><strong>U</strong> - Place ICM diagonally opposite to
+OCO</p></li>
+<li><p><strong>M'</strong>  - Keep ICM and OCO in different
+layers</p></li>
+<li><p><strong>U2</strong>  - Place OCO on top of ICM</p></li>
+<li><p><strong>M' U' M'</strong>  - Solve the good arrow</p></li>
+</ul>
+<h3 id="case-2-3d-view">Case 2 (<a
+href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_2&amp;scramble=U_M2_U2_M2_U2_M_U_M-_U-_M_U_M&amp;alg=%2F%2F_Good_B%252Dcycle_selected%3A_ICM%3DDB%2C_MICA%3DUR%2C_OCO%3DUF%3B_Matching_pair_is_MICA%252DOCO%0AM_%2F%2F_Raise_the_B%252Dcycle%0AU-_%2F%2F_Place_MICA_diagonally_opposite_to_OCO%0AM__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU__%2F%2F_Place_ICM_on_top_of_OCO%0AM-_U-_M__%2F%2F_Solve_the_good_arrow">3D
+view</a>)</h3>
+<ul>
+<li><strong>Set up:</strong> U M2 U2 M2 U2 M U M' U' M U M</li>
+</ul>
 <p>Good B-cycle selected: ICM=DB, MICA=UR, OCO=UF; Matching pair is
 MICA-OCO</p>
-<p><strong>M</strong> // Raise the B-cycle</p>
-<p><strong>U'</strong> // Place MICA diagonally opposite to OCO</p>
-<p><strong>M</strong>  // Keep ICM and OCO in different layers</p>
-<p><strong>U</strong>  // Place ICM on top of OCO</p>
-<p><strong>M' U' M</strong>  // Solve the good arrow</p>
-<p><a
-href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_2&amp;scramble=U_M2_U2_M2_U2_M_U_M-_U-_M_U_M&amp;alg=%2F%2F_Good_B%252Dcycle_selected%3A_ICM%3DDB%2C_MICA%3DUR%2C_OCO%3DUF%3B_Matching_pair_is_MICA%252DOCO%0AM_%2F%2F_Raise_the_B%252Dcycle%0AU-_%2F%2F_Place_MICA_diagonally_opposite_to_OCO%0AM__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU__%2F%2F_Place_ICM_on_top_of_OCO%0AM-_U-_M__%2F%2F_Solve_the_good_arrow">3D
-view</a></p>
-<h3 id="case-3">Case 3</h3>
-<p><strong>Set up:</strong> M2 U2 M' U M' U' M2 U2 M U M</p>
+<ul>
+<li><p><strong>M</strong> - Raise the B-cycle</p></li>
+<li><p><strong>U'</strong> - Place MICA diagonally opposite to
+OCO</p></li>
+<li><p><strong>M</strong>  - Keep ICM and OCO in different
+layers</p></li>
+<li><p><strong>U</strong>  - Place ICM on top of OCO</p></li>
+<li><p><strong>M' U' M</strong>  - Solve the good arrow</p></li>
+</ul>
+<h3 id="case-3-3d-view">Case 3 (<a
+href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_3&amp;scramble=M2_U2_M-_U_M-_U-_M2_U2_M_U_M&amp;alg=%2F%2F_Good_F%252Dcycle_selected%3A_ICM%3DUF%2C_MICA%3DUR%2C_OCO%3DDB%3B_Matching_pair_is_MICA%252DICM%0AM-_%2F%2F_Raise_the_F%252Dcycle%0AU-_%2F%2F_Place_MICA_diagonally_opposite_to_OCO%0AM__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU__%2F%2F_Place_ICM_on_top_of_OCO%0AM-_U_M__%2F%2F_Solve_the_good_arrow_%2528lucky_4c_skip!%2529">3D
+view</a>)</h3>
+<ul>
+<li><strong>Set up:</strong> M2 U2 M' U M' U' M2 U2 M U M</li>
+</ul>
 <p>Good F-cycle selected: ICM=UF, MICA=UR, OCO=DB; Matching pair is
 MICA-ICM</p>
-<p><strong>M'</strong> // Raise the F-cycle</p>
-<p><strong>U'</strong> // Place MICA diagonally opposite to OCO</p>
-<p><strong>M</strong>  // Keep ICM and OCO in different layers</p>
-<p><strong>U</strong>  // Place ICM on top of OCO</p>
-<p><strong>M' U M</strong>  // Solve the good arrow (lucky 4c skip!)</p>
-<p><a
-href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_3&amp;scramble=M2_U2_M-_U_M-_U-_M2_U2_M_U_M&amp;alg=%2F%2F_Good_F%252Dcycle_selected%3A_ICM%3DUF%2C_MICA%3DUR%2C_OCO%3DDB%3B_Matching_pair_is_MICA%252DICM%0AM-_%2F%2F_Raise_the_F%252Dcycle%0AU-_%2F%2F_Place_MICA_diagonally_opposite_to_OCO%0AM__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU__%2F%2F_Place_ICM_on_top_of_OCO%0AM-_U_M__%2F%2F_Solve_the_good_arrow_%2528lucky_4c_skip!%2529">3D
-view</a></p>
-<h3 id="case-4">Case 4</h3>
-<p><strong>Set up:</strong> M U' M U' M U M2 U M</p>
+<ul>
+<li><p><strong>M'</strong> - Raise the F-cycle</p></li>
+<li><p><strong>U'</strong> - Place MICA diagonally opposite to
+OCO</p></li>
+<li><p><strong>M</strong>  - Keep ICM and OCO in different
+layers</p></li>
+<li><p><strong>U</strong>  - Place ICM on top of OCO</p></li>
+<li><p><strong>M' U M</strong>  - Solve the good arrow (lucky 4c
+skip!)</p></li>
+</ul>
+<h3 id="case-4-3d-view">Case 4 (<a
+href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_4&amp;scramble=M_U-_M_U-_M_U_M2_U_M&amp;alg=%2F%2F_Good_F%252Dcycle_selected%3A_ICM%3DUF%2C_MICA%3DUL%2C_OCO%3DUB%3B_Matching_pair_is_MICA%252DOCO%0AM-_%2F%2F_Raise_the_F%252Dcycle%0AU-_%2F%2F_Place_MICA_diagonally_opposite_to_OCO%0AM-__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU-__%2F%2F_Place_ICM_on_top_of_OCO%0AM_U_M__%2F%2F_Solve_the_good_arrow">3D
+view</a>)</h3>
+<ul>
+<li><strong>Set up:</strong> M U' M U' M U M2 U M</li>
+</ul>
 <p>Good F-cycle selected: ICM=UF, MICA=UL, OCO=UB; Matching pair is
 MICA-OCO</p>
-<p><strong>M'</strong> // Raise the F-cycle</p>
-<p><strong>U'</strong> // Place MICA diagonally opposite to OCO</p>
-<p><strong>M'</strong>  // Keep ICM and OCO in different layers</p>
-<p><strong>U'</strong>  // Place ICM on top of OCO</p>
-<p><strong>M U M</strong>  // Solve the good arrow</p>
-<p><a
-href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_4&amp;scramble=M_U-_M_U-_M_U_M2_U_M&amp;alg=%2F%2F_Good_F%252Dcycle_selected%3A_ICM%3DUF%2C_MICA%3DUL%2C_OCO%3DUB%3B_Matching_pair_is_MICA%252DOCO%0AM-_%2F%2F_Raise_the_F%252Dcycle%0AU-_%2F%2F_Place_MICA_diagonally_opposite_to_OCO%0AM-__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU-__%2F%2F_Place_ICM_on_top_of_OCO%0AM_U_M__%2F%2F_Solve_the_good_arrow">3D
-view</a></p>
-<h3 id="case-5">Case 5</h3>
-<p><strong>Set up:</strong> U M U M2 U2 M U2 M' U M' U</p>
+<ul>
+<li><p><strong>M'</strong> - Raise the F-cycle</p></li>
+<li><p><strong>U'</strong> - Place MICA diagonally opposite to
+OCO</p></li>
+<li><p><strong>M'</strong>  - Keep ICM and OCO in different
+layers</p></li>
+<li><p><strong>U'</strong>  - Place ICM on top of OCO</p></li>
+<li><p><strong>M U M</strong>  - Solve the good arrow</p></li>
+</ul>
+<h3 id="case-5-3d-view">Case 5 (<a
+href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_5&amp;scramble=U_M_U_M2_U2_M_U2_M-_U_M-_U&amp;alg=%2F%2F_Good_F%252Dcycle_selected%3A_ICM%3DUL%2C_MICA%3DUF%2C_OCO%3DDB%3B_Matching_pair_is_MICA%252DICM%0AM-_%2F%2F_Raise_the_F%252Dcycle%0AU_%2F%2F_Place_MICA_diagonally_opposite_to_OCO%0AM-__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU2__%2F%2F_Place_OCO_on_top_of_ICM%0AM-_U-_M__%2F%2F_Solve_the_good_arrow">3D
+view</a>)</h3>
+<ul>
+<li><strong>Set up:</strong> U M U M2 U2 M U2 M' U M' U</li>
+</ul>
 <p>Good F-cycle selected: ICM=UL, MICA=UF, OCO=DB; Matching pair is
 MICA-ICM</p>
-<p><strong>M'</strong> // Raise the F-cycle</p>
-<p><strong>U</strong> // Place MICA diagonally opposite to OCO</p>
-<p><strong>M'</strong>  // Keep ICM and OCO in different layers</p>
-<p><strong>U2</strong>  // Place OCO on top of ICM</p>
-<p><strong>M' U' M</strong>  // Solve the good arrow</p>
-<p><a
-href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_5&amp;scramble=U_M_U_M2_U2_M_U2_M-_U_M-_U&amp;alg=%2F%2F_Good_F%252Dcycle_selected%3A_ICM%3DUL%2C_MICA%3DUF%2C_OCO%3DDB%3B_Matching_pair_is_MICA%252DICM%0AM-_%2F%2F_Raise_the_F%252Dcycle%0AU_%2F%2F_Place_MICA_diagonally_opposite_to_OCO%0AM-__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU2__%2F%2F_Place_OCO_on_top_of_ICM%0AM-_U-_M__%2F%2F_Solve_the_good_arrow">3D
-view</a></p>
-<h3 id="case-6">Case 6</h3>
-<p><strong>Set up:</strong> U' M U' M' U' M U M U' M2</p>
+<ul>
+<li><p><strong>M'</strong> - Raise the F-cycle</p></li>
+<li><p><strong>U</strong> - Place MICA diagonally opposite to
+OCO</p></li>
+<li><p><strong>M'</strong>  - Keep ICM and OCO in different
+layers</p></li>
+<li><p><strong>U2</strong>  - Place OCO on top of ICM</p></li>
+<li><p><strong>M' U' M</strong>  - Solve the good arrow</p></li>
+</ul>
+<h3 id="case-6-3d-view">Case 6 (<a
+href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_6&amp;scramble=U-_M_U-_M-_U-_M_U_M_U-_M2&amp;alg=%2F%2F_Good_B%252Dcycle_selected%3A_ICM%3DUB%2C_MICA%3DUR%2C_OCO%3DDF%3B_Matching_pair_is_MICA%252DOCO%0AM_%2F%2F_Raise_the_B%252Dcycle%0AU_%2F%2F_Place_MICA_diagonally_opposite_to_OCO%0AM-__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU-__%2F%2F_Place_ICM_on_top_of_OCO%0AM_U_M__%2F%2F_Solve_the_good_arrow">3D
+view</a>)</h3>
+<ul>
+<li><strong>Set up:</strong> U' M U' M' U' M U M U' M2</li>
+</ul>
 <p>Good B-cycle selected: ICM=UB, MICA=UR, OCO=DF; Matching pair is
 MICA-OCO</p>
-<p><strong>M</strong> // Raise the B-cycle</p>
-<p><strong>U</strong> // Place MICA diagonally opposite to OCO</p>
-<p><strong>M'</strong>  // Keep ICM and OCO in different layers</p>
-<p><strong>U'</strong>  // Place ICM on top of OCO</p>
-<p><strong>M U M</strong>  // Solve the good arrow</p>
-<p><a
-href="https://cubedb.net/?puzzle=3&amp;title=2mo_EOLR_case_6&amp;scramble=U-_M_U-_M-_U-_M_U_M_U-_M2&amp;alg=%2F%2F_Good_B%252Dcycle_selected%3A_ICM%3DUB%2C_MICA%3DUR%2C_OCO%3DDF%3B_Matching_pair_is_MICA%252DOCO%0AM_%2F%2F_Raise_the_B%252Dcycle%0AU_%2F%2F_Place_MICA_diagonally_opposite_to_OCO%0AM-__%2F%2F_Keep_ICM_and_OCO_in_different_layers%0AU-__%2F%2F_Place_ICM_on_top_of_OCO%0AM_U_M__%2F%2F_Solve_the_good_arrow">3D
-view</a></p>
+<ul>
+<li><p><strong>M</strong> - Raise the B-cycle</p></li>
+<li><p><strong>U</strong> - Place MICA diagonally opposite to
+OCO</p></li>
+<li><p><strong>M'</strong> - Keep ICM and OCO in different
+layers</p></li>
+<li><p><strong>U'</strong> - Place ICM on top of OCO</p></li>
+<li><p><strong>M U M</strong> -  Solve the good arrow</p></li>
+</ul>
